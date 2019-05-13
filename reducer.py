@@ -22,6 +22,7 @@ import sys
 # Sum of all sales (values) is initialized with zero, we just started
 sum_of_values = 0
 count = 0
+avg = 0
 
 # Previous key is initialized with None, we just started
 previous_key = None
@@ -62,4 +63,5 @@ for line in sys.stdin:
 
 # write the last result to stdout
 if count > 114:
-    sys.stdout.write("{0}\t{1}\n".format(previous_key, count))
+    avg = sum_of_values / count
+    sys.stdout.write("{0}\t{1}\n".format(previous_key, avg))
