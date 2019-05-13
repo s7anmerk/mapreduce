@@ -41,7 +41,8 @@ for line in sys.stdin:
     # Key is the payment, value is the sales     
     # With a tab (\t) between key and value
     # New line \n means new record
-    if len(data) != 6:
-    	raise Exception('Data does not have 6 elements. The ength of x was: {}'.format(x))
-    else:
-	sys.stdout.write("{0}\t{1}\n".format(category, sales))
+    if category == "Computers" or category == "Cameras" or category == "Video Games":
+        if len(data) != 6:
+    	    raise Exception('Data does not have 6 elements. The ength of x was: {}'.format(x))
+        else:
+	    sys.stdout.write("{0}\t{1}\n".format(category, sales))
