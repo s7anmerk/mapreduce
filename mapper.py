@@ -3,7 +3,6 @@
 # Import the sys library 
 # for writing and reading the standard input and output
 import sys
-from intertools import groupby, sum
 
 # Example Input data (minipurchase.txt)
 # Input is tabulator (\t) separated
